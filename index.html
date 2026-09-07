@@ -30,11 +30,94 @@
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   </head>
+  <style>
+    html {
+      font-family: sans-serif;
+      color: #fff;
+    }
+
+    body {
+      background-color: #028d42;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 clamp(1.5rem, 8vw, 8rem);
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .content img {
+      flex-shrink: 0;
+      width: 150px;
+      height: 150px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .text h1,
+    .text p {
+      margin: 0;
+    }
+
+    .text h1 {
+      font-size: clamp(2rem, 4vw, 4rem);
+    }
+
+    .text p {
+      font-size: clamp(1rem, 2vw, 2rem);
+    }
+
+    a {
+      color: #ffcf40;
+      text-decoration-color: #ffcf40;
+    }
+
+    a:hover,
+    a:focus {
+      color: #fff;
+      text-decoration-color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text {
+        align-items: center;
+      }
+    }
+  </style>
   <body>
-    <h1>Malleable</h1>
-    <p>
-      Consulting for government — geospatial data, transportation systems,
-      digital services
-    </p>
+    <div class="content">
+      <img
+        src="/assets/malleable.svg"
+        alt="Malleable company logo - a bicycle sharrow with a city skyline nested below it"
+      />
+      <div class="text">
+        <h1>Malleable</h1>
+        <p>
+          Consulting for government — geospatial data, transportation systems,
+          digital services
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/john-clary-93469aa0/"
+            >Get in touch</a
+          >
+        </p>
+      </div>
+    </div>
   </body>
 </html>
