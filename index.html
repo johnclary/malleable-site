@@ -37,7 +37,7 @@
     }
 
     body {
-      background-color: #028d42;
+      background-color: #028840;
       display: flex;
       min-height: 100vh;
       align-items: center;
@@ -65,17 +65,14 @@
       gap: 0.75rem;
     }
 
-    .text h1,
-    .text p {
+    h1 {
+      font-size: clamp(2rem, 4vw, 4rem);
       margin: 0;
     }
 
-    .text h1 {
-      font-size: clamp(2rem, 4vw, 4rem);
-    }
-
-    .text p {
+    p {
       font-size: clamp(1rem, 2vw, 2rem);
+      margin: 0;
     }
 
     a {
@@ -102,10 +99,14 @@
   </style>
   <body>
     <div class="content">
-      <img
-        src="/assets/malleable.svg"
-        alt="Malleable company logo - a bicycle sharrow with a city skyline nested below it"
-      />
+      <div>
+        <img
+          style="height: 100%"
+          src="/assets/malleable.svg"
+          alt="Malleable company logo - a bicycle sharrow with a city skyline nested below it"
+        />
+      </div>
+
       <div class="text">
         <h1>Malleable</h1>
         <p>
